@@ -41,8 +41,8 @@ for i, prefecture in enumerate(prefectures):
 
         positions = []
         curve_index = 1
-        while ('cv%s_%i' % (school_id.split('-')[1], curve_index) in curves):
-            positions.append(curves['cv%s_%i' %
+        while ('cv%s_%d' % (school_id.split('-')[1], curve_index) in curves):
+            positions.append(curves['cv%s_%d' %
                                     (school_id.split('-')[1], curve_index)])
             curve_index += 1
 
